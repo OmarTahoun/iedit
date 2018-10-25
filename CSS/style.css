@@ -1,0 +1,32 @@
+.container{
+  display: block;
+  margin-top: 0;
+  height: 770px;
+}
+
+.edit{
+  padding-right: 5px;
+  border-right: 2px solid black;
+  float: left;
+  display: inline-block;
+  margin: 2px;
+ }
+ .preview{
+   font-family: Helvetica;
+  padding: 10px;
+  display: inline-block;
+  background-color:  white;
+  color:  #007c72;
+  font-size: 28px;
+ }
+
+ label{
+   margin: 15px;
+   font-size: 20px;
+   font-family: Helvetica;
+   border:1px solid black;
+   padding: 5px;
+   background-color: green;
+   color: white;
+   border-radius: 5px;
+ }
