@@ -5,6 +5,7 @@
 }
 
 .edit{
+  overflow: hidden;
   padding-right: 5px;
   border-right: 2px solid black;
   float: left;
@@ -12,9 +13,11 @@
   margin: 2px;
  }
  .preview{
-   font-family: Helvetica;
+  overflow-wrap: normal;
+  overflow-wrap: break-word;
+  font-family: Helvetica;
   padding: 10px;
-  display: inline-block;
+  display: inline;
   background-color:  white;
   color:  #007c72;
   font-size: 28px;
