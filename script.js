@@ -6,7 +6,7 @@ var area = document.querySelector(".editor");
 var prev = document.querySelector(".preview");
 var choices = document.getElementsByName("mode");
 
-
+prev.style.maxWidth = w;
 
 config = {
     lineNumbers: true,
