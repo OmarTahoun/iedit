@@ -1,11 +1,3 @@
-config = {
-    lineNumbers: true,
-    theme:"default",
-    mode: "xml",
-    htmlMode: true
-};
-
-
 function setupEditor() {
   //editor and preview area and settigns
   editor = CodeMirror.fromTextArea(editingArea.elt, config);
@@ -16,7 +8,7 @@ function setupEditor() {
 
 
 function show() {
-  let text = editor.getValue();
+  let text = getText();
   if(text == ""){
     mode.elt.style.opacity = 1;
     label.elt.style.display = 'block';
@@ -29,3 +21,11 @@ function show() {
       preview.elt.innerHTML = text;
   }
 };
+
+function getText(){
+  var text = editor.getValue();
+  if (mode.value() == "HTML")
+    return text;
+  else
+    return markdown.toHTML(text);
+}

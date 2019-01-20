@@ -15,6 +15,8 @@ body{
   float: left;
   display: inline-block;
   cursor: pointer;
+  font-family: Arial, monospace;
+  font-size: 18px;
  }
  .preview{
    background-color: white;
