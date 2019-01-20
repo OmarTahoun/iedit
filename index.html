@@ -3,10 +3,17 @@
   <head>
     <meta charset="utf-8">
     <!-- making this work! -->
+
     <script src="lib/codemirror.js"></script>
     <script type="text/javascript" src="lib/xml.js"></script>
     <script type="text/javascript" src="lib/markdown.js"></script>
     <script src="lib/parser.js"></script>
+
+    <script type="text/javascript" src="p5 lib/p5.min.js"></script>
+    <script type="text/javascript" src="p5 lib/p5.dom.min.js"></script>
+    <script src="sketch.js"></script>
+
+    <script type="text/javascript" src="script.js"></script>
 
     <!-- making this pretty -->
     <link rel="stylesheet" href="lib/codemirror.css">
@@ -18,14 +25,7 @@
       <div class="edit">
         <textarea class="editor"></textarea>
       </div>
-      <div class="preview"><h2>GET ON <i>TYPING</i>👨‍💻👨‍💻</h2></div>
+      <div class="preview empty"> <span id="default"><h2>GET ON <i>TYPING</i>👨‍💻👨‍💻</h2></span></div>
     </div>
-    <form>
-      <input type="radio" id="html" name="mode" value="xml" checked>
-      <label for="html">HTML</label>
-      <input type="radio" id="md" name="mode" value="markdown">
-      <label for="md">Markdown</label>
-    </form>
-    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>

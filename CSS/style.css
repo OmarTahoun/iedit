@@ -1,7 +1,7 @@
 .container{
   display: block;
   margin-top: 0;
-  height: 770px;
+  height: fit-content;
 }
 
 .edit{
@@ -10,26 +10,27 @@
   border-right: 2px solid black;
   float: left;
   display: inline-block;
-  margin: 2px;
  }
  .preview{
-  overflow-wrap: normal;
-  overflow-wrap: break-word;
-  font-family: Helvetica;
-  padding: 10px;
-  display: inline;
-  background-color:  white;
-  color:  #007c72;
-  font-size: 28px;
+   display: inline;
+   max-height: 861px;
+   overflow-wrap: break-word;
+   overflow-y: auto;
+   padding: 3px;
  }
 
- label{
-   margin: 15px;
-   font-size: 20px;
-   font-family: Helvetica;
-   border:1px solid black;
-   padding: 5px;
-   background-color: green;
-   color: white;
-   border-radius: 5px;
+ .preview.empty{
+   color: #999966;
+   display: inline;
+   font-size: 27px;
+   font-family: sans-serif;
+   max-height: 861px;
+   overflow-wrap: break-word;
+   overflow-y: auto;
+   padding: 3px;
  }
+#default{
+  text-align: center;
+  position: fixed;
+  left: 1200px;
+}
