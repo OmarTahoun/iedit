@@ -1,3 +1,7 @@
+body{
+  background-color: #898989;
+  font-family: sans-serif;
+}
 .container{
   display: block;
   margin-top: 0;
@@ -10,27 +14,65 @@
   border-right: 2px solid black;
   float: left;
   display: inline-block;
+  cursor: pointer;
  }
  .preview{
+   background-color: white;
+   height: 97.8vh;
    display: inline;
-   max-height: 861px;
+   margin: 0;
+   margin-left: 5px;
+   max-height: 858px;
    overflow-wrap: break-word;
    overflow-y: auto;
    padding: 3px;
+   width: 48vw;
  }
 
  .preview.empty{
+   background-color: white;
    color: #999966;
    display: inline;
    font-size: 27px;
    font-family: sans-serif;
-   max-height: 861px;
+   height: 97.8vh;
+   max-height: 858px;
+   margin: 0;
+   margin-left: 5px;
    overflow-wrap: break-word;
    overflow-y: auto;
    padding: 3px;
+   width: 48vw;
  }
 #default{
   text-align: center;
   position: fixed;
   left: 1200px;
+  top: 350px;
+}
+
+
+.mode{
+  background-color: #eacd00;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  color: grey;
+  display: inline-block;
+  font-size: 14px;
+  opacity: 1;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  width: auto;
+  z-index: 5;
+}
+
+.mode:hover{
+  opacity: 1 !important;
+}
+
+.label{
+  color: #999966;
+  font-size: 20px;
 }

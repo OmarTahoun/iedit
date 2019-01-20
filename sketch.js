@@ -1,13 +1,24 @@
-let config, editor, editingArea, preview;
-let w, h;
+let config, editor, editingArea, preview, mode, label;
+let width, height;
 
 function setup() {
-  w = windowWidth/2;
-  h = windowHeight-10;
+  width = windowWidth/2;
+  height = windowHeight-13;
 
   editingArea = select('.editor');
   preview      = select('.preview');
   setupEditor();
   preview.position(editor.x + editor.width, editor.y);
+
+  mode = createSelect('Mode');
+  mode.position((width-55)*2, 20);
+  mode.addClass('mode');
+  mode.option('HTML');
+  mode.option("MarkDown");
+
+  label = createP('Set The Mode: ');
+  label.position(mode.x - 135, mode.y-20);
+  label.addClass('label');
+
 
 }
